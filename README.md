@@ -9,6 +9,11 @@ To run:
 You should get output similar to:
 
 ```
+$ npm run start                                                                                                       ✔  4s   base   14:12:00  
+
+> lab08@1.0.0 start
+> node .
+
 Logos:
 {
   locations: [],
