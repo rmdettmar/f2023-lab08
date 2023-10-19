@@ -1,12 +1,12 @@
 # f2023-lab08
 
 To run:
-
+1. Follow the directions in the lab instructions to set up a Google Cloud Vision API account and ensure you are logged in.
 1. `npm i`
 1. `npm run compile`
 1. `npm run start`
 
-You should get output similar to:
+If your environment is properly set up, you should get output similar to:
 
 ```
 $ npm run start                                                                                                       ✔  4s   base   14:12:00  
