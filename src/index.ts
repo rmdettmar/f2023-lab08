@@ -16,16 +16,16 @@ function main (fileNames: string[]): void {
             const logos = result.logoAnnotations;
             logos?.forEach((logo) => {
                 if (logo.description)
-                    console.log(logo.description);
+                    console.log(`"${logo.description}" found in in file ${fileName}`);
                 if (logo.score)
                     scores.push(logo.score);
             });
             const avg = scores.reduce((a, b) => a + b) / scores.length;
-            console.log(`Average score for "${fileName}": ${avg}`);
+            console.log(`Average score for ${fileName}: ${avg}`);
         })
         .catch((err) => {
             if (err.code === 'ENOENT')
-                console.log(`File "${fileName}" not found`);
+                console.log(`File ${fileName} not found`);
         });
     });
 }
