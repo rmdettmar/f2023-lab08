@@ -13,5 +13,8 @@
   "dependencies": {
     "@google-cloud/vision": "^4.0.1",
     "@types/node": "^16.7.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
   }
 }
