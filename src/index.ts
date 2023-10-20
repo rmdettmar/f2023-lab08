@@ -21,11 +21,11 @@ function main (fileNames: string[]): void {
                     scores.push(logo.score);
             });
             const avg = scores.reduce((a, b) => a + b) / scores.length;
-            console.log(`Average score: ${avg}`);
+            console.log(`Average score for "${fileName}": ${avg}`);
         })
         .catch((err) => {
             if (err.code === 'ENOENT')
-                console.log('File not found');
+                console.log(`File "${fileName}" not found`);
         });
     });
 }
