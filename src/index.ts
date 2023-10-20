@@ -9,6 +9,7 @@ const client = new ImageAnnotatorClient();
  */
 function main (fileNames: string[]): void {
     fileNames.forEach((fileName: string) => {
+        console.log(`Running logo detection on ${fileName}`);
         client.logoDetection(fileName)
         .then(([result]) => {
             let scores: number[] = [];
